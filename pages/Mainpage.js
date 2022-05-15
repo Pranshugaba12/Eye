@@ -127,10 +127,10 @@ function Mainpage(){
               <td>Right Posterlor:</td>
               <td>Left Posterlor:</td>
             </tr>
-            <tr className={styles.heading}>
+            {/* <tr className={styles.heading}>
               <td className={styles.sepratebordereye}>
                 <div>
-                  <Image src={updateImage ? updateImage : "/image/eye.jpg" }  alt="user-image" height="200" width="200"/>
+                  <Image src={updateImage ? updateImage : "/image/eye.jpg" }  alt="user-image" height="200" width="200" />
                 </div>
                </td>
               <td className={styles.sepratebordereye}>
@@ -142,11 +142,45 @@ function Mainpage(){
             <tr className={styles.heading}>
               <td><input type="file" accept="image/*" onChange={fileSelectHandler} /></td>
               <td><input type="file" accept="image/*" onChange={fileSelectHandlersec} /></td>
-            </tr>
+            </tr> */}
           </table>
-          <br/>
-          <button className={styles.button}>Save</button>
-          <button className={styles.button}>Print</button>
+          <div className={styles.bothEye}>
+          <div className={styles.leftEye}>
+            <div className={styles.hover1}>
+              <div>
+                <Image
+                className={styles.imge}
+                  src={updateImagesec ? updateImagesec : "/image/eye.jpg"}
+                  alt="user-image"
+                  height="400"
+                  width="400"
+                />
+              </div>
+            </div>
+            <div className={styles.stuff1}>
+              <input
+                type="file"
+                accept="image/*"
+                onChange={fileSelectHandlersec}
+              />
+            </div>
+          </div>
+          <div className={styles.rightEye}>
+            <div className={styles.hover2}><Image
+            className={styles.imge}
+              src={updateImage ? updateImage : "/image/eye.jpg"}
+              alt="user-image"
+              height="400"
+              width="400"
+            /></div>
+            <div className={styles.stuff2}>
+              <input type="file" accept="image/*" onChange={fileSelectHandler} />
+            </div>
+          </div>
+        </div>
+          <br/>      
+            {/* <button className={styles.button}>Save</button>
+          <button className={styles.button}>Print</button> */}
        </center>  
     </div>
   )

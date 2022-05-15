@@ -166,3 +166,40 @@ width: 100%;
   margin: 4px 2px;
   cursor: pointer;
 }
+.stuff1 {
+  opacity: 0.0;
+  z-index: 1;
+}
+.hover1 {
+  margin-bottom:15px;
+}
+.hover1:hover + .stuff1 {
+  opacity: 1.0;
+}
+.stuff2 {
+  opacity: 0.0;
+  z-index: 1;
+}
+.hover2 {
+  margin-bottom:15px;
+}
+.hover2:hover + .stuff2 {
+  opacity: 1.0;
+}
+
+.bothEye{
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+.leftEye{
+  width: 50%;
+  border: 1px solid;
+}
+.rightEye{
+  width: 50%;
+  border: 1px solid;
+}
+.imge{
+  margin-top: 50px;
+}
